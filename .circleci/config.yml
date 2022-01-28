@@ -1,6 +1,8 @@
 # .circleci/config.yml
 
 version: 2.1
+orbs: 
+  macos: circleci/macos@2.0.1
 jobs:
   test:
     docker:
