@@ -2,11 +2,11 @@
 
 version: 2.1
 orbs: 
-  macos: circleci/macos@2.0.1
+  node: circleci/node@lts
 jobs:
   test:
-    docker:
-      - image: circleci/node:lts
+    macos:
+      xcode: 13.2.1
     steps:
       - checkout
       - run: npm cache verify
